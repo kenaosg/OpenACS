@@ -1,65 +1,18 @@
 package acsserver;
 
-//************************************************************
-//for xml parse
-
-//These are the JAXP APIs
 import javax.xml.parsers.DocumentBuilder; 
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-
-
-
-
-
-
-
-
-
-
-
-
-//These classes are for the exceptions that can be thrown when the XML document is parsed:
-import org.xml.sax.ErrorHandler;
-import org.xml.sax.SAXException; 
-import org.xml.sax.SAXParseException;
-import org.xml.sax.helpers.*;
-
-//These classes read the sample XML file and manage output:
-import java.io.File;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-
-
-
-
-
 import java.util.ArrayList;
 
-
-
-
-
-
-
-
-//Finally, import the W3C definitions for a DOM, DOM exceptions, entities and nodes:
 import org.w3c.dom.Document;
-import org.w3c.dom.DocumentType;
-import org.w3c.dom.Entity;
-import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-//************************************************************
-
 import org.apache.log4j.Logger;
 import org.junit.Test;
+import org.xml.sax.SAXException; 
 
 import com.cwmp.acsserver.acs.soap.SoapEnvelope;
-import com.cwmp.acsserver.acs.soap.SoapHeader;
-import com.cwmp.acsserver.acs.structprimitive.EventList;
 import com.cwmp.acsserver.acs.structprimitive.EventStruct;
 import com.cwmp.acsserver.acs.structprimitive.ParameterKeyType;
 import com.cwmp.acsserver.acs.structprimitive.ParameterNames;
