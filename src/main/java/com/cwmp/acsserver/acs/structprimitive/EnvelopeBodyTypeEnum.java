@@ -1,0 +1,38 @@
+package com.cwmp.acsserver.acs.structprimitive;
+
+public enum EnvelopeBodyTypeEnum 
+{
+	Unknown,
+    SoapFault,
+    Fault,
+    Inform,
+    InformResponse,
+    GetParameterNames,
+    GetParameterNamesResponse,
+    GetParameterValues,
+    GetParameterValuesResponse,
+    GetParameterAttributes,
+    GetParameterAttributesResponse,
+    SetParameterValues,
+    SetParameterValuesResponse,
+    SetParameterAttributes,
+    SetParameterAttributesResponse,
+    AddObject,
+    AddObjectResponse,
+    DeleteObject,
+    DeleteObjectResponse,
+    Reboot,
+    RebootResponse,
+    Download,
+    Upload,
+    DownloadResponse,
+    UploadResponse,
+    FactoryReset,
+    FactoryResetResponse,
+    TransferComplete,
+    TransferCompleteResponse,
+    AutonomousTransferComplete,
+    AutonomousTransferCompleteResponse,
+    GetRPCMethods,
+    GetRPCMethodsResponse
+}

@@ -1,0 +1,56 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:cwmp="urn:dslforum-org:cwmp-1-2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SOAP-ENV:Header>
+		<cwmp:HoldRequests SOAP-ENV:mustUnderstand="1">0</cwmp:HoldRequests>
+	</SOAP-ENV:Header>
+	<SOAP-ENV:Body>
+		<cwmp:SetParameterValues>
+			<ParameterList SOAP-ENC:arrayType="cwmp:ParameterValueStruct[16]">
+				<ParameterValueStruct>
+					<Name>Device.FAP.PerfMgmt.Config.1.Enable</Name>
+					<Value xsi:type="xsd:">1</Value>
+				</ParameterValueStruct>
+				<ParameterValueStruct>
+					<Name>Device.FAP.PerfMgmt.Config.1.Username</Name>
+					<Value xsi:type="xsd:">admin</Value>
+				</ParameterValueStruct>
+				<ParameterValueStruct>
+					<Name>Device.FAP.PerfMgmt.Config.1.Password</Name>
+					<Value xsi:type="xsd:">admin</Value>
+				</ParameterValueStruct>
+				<ParameterValueStruct>
+					<Name>Device.X_BC0304_DebugMgmt.Traces.LogServer.ConnectingPolicy</Name>
+					<Value xsi:type="xsd:">Always</Value>
+				</ParameterValueStruct>
+				<ParameterValueStruct>
+					<Name>Device.X_BC0304_DebugMgmt.Traces.LogServer.CpuhPort</Name>
+					<Value xsi:type="xsd:">1111</Value>
+				</ParameterValueStruct>
+				<ParameterValueStruct>
+					<Name>Device.X_BC0304_DebugMgmt.Traces.LogServer.CpulPort</Name>
+					<Value xsi:type="xsd:">7777</Value>
+				</ParameterValueStruct>
+				<ParameterValueStruct>
+					<Name>Device.X_BC0304_DebugMgmt.Traces.LogServer.CpuhFileSize</Name>
+					<Value xsi:type="xsd:">1</Value>
+				</ParameterValueStruct>
+				<ParameterValueStruct>
+					<Name>Device.X_BC0304_DebugMgmt.Traces.LogServer.CpulFileSize</Name>
+					<Value xsi:type="xsd:">10</Value>
+				</ParameterValueStruct>
+				<ParameterValueStruct>
+					<Name>Device.X_BC0304_DebugMgmt.Upload.Enable</Name>
+					<Value xsi:type="xsd:">1</Value>
+				</ParameterValueStruct>
+				<ParameterValueStruct>
+					<Name>Device.X_BC0304_DebugMgmt.Upload.Username</Name>
+					<Value xsi:type="xsd:">admin</Value>
+				</ParameterValueStruct>
+				<ParameterValueStruct>
+					<Name>Device.X_BC0304_DebugMgmt.Upload.Password</Name>
+					<Value xsi:type="xsd:">admin</Value>
+				</ParameterValueStruct>
+			</ParameterList>
+			<ParameterKey>key35348</ParameterKey>
+		</cwmp:SetParameterValues>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

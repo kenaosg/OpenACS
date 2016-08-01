@@ -1,0 +1,47 @@
+<SOAP-ENV:Envelope
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cwmp="urn:dslforum-org:cwmp-1-2">
+    <SOAP-ENV:Header>
+      <cwmp:ID SOAP-ENV:mustUnderstand="1">1461805464</cwmp:ID>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+      <cwmp:Inform>
+        <DeviceId>
+          <Manufacturer>XXX</Manufacturer>
+          <OUI>BC0304</OUI>
+          <ProductClass>First class</ProductClass>
+          <SerialNumber>1923043</SerialNumber>
+        </DeviceId>
+        <Event SOAP-ENC:arrayType="cwmp:EventStruct[2]">
+          <EventStruct>
+            <EventCode>X BC0304 Alarm</EventCode>
+            <CommandKey></CommandKey>
+          </EventStruct>
+          <EventStruct>
+            <EventCode>4 VALUE CHANGE</EventCode>
+            <CommandKey></CommandKey>
+          </EventStruct>
+        </Event>
+        <MaxEnvelopes>1</MaxEnvelopes>
+        <CurrentTime>2016-07-21T14:49:03+08:00</CurrentTime>
+        <RetryCount>1</RetryCount>
+        <ParameterList SOAP-ENC:arrayType="cwmp:ParameterValueStruct[000032]">
+            <ParameterValueStruct>
+              <Name>Device.RootDataModelVersion</Name>
+              <Value xsi:type="xsd:string">2.7</Value>
+            </ParameterValueStruct>
+            <ParameterValueStruct>
+              <Name>Device.DeviceInfo.HardwareVersion</Name>
+              <Value xsi:type="xsd:string">dalian</Value>
+            </ParameterValueStruct>
+            <ParameterValueStruct>
+              <Name>Device.DeviceInfo.SoftwareVersion</Name>
+              <Value xsi:type="xsd:string">643-19953-19916-20025-20027-485-597</Value>
+            </ParameterValueStruct>
+        </ParameterList>
+      </cwmp:Inform>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
