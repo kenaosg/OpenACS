@@ -18,7 +18,10 @@ public class DocumentBuilderFactorySingleton
 	{
 		try
 		{
-			return this.dbFactory.newDocumentBuilder();
+			synchronized(this)
+			{
+				return this.dbFactory.newDocumentBuilder();
+			}
 		} catch (ParserConfigurationException e)
 		{
 			// TODO Auto-generated catch block
