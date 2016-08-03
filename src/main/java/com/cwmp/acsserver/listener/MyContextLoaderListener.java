@@ -26,10 +26,12 @@ public class MyContextLoaderListener extends ContextLoaderListener
 		logger.info("MyContextLoaderListener...");
 		
 		ServletContext sc = sce.getServletContext();		
-		ApplicationContext ac = WebApplicationContextUtils.getWebApplicationContext(sc);
+		//ApplicationContext ac = WebApplicationContextUtils.getWebApplicationContext(sc);
 		
 		Map<String, CpeEntity> cpes = Collections.synchronizedMap(new HashMap<String, CpeEntity>(128));
 		sc.setAttribute("cpes", cpes);
+		
+		//start thread which will process test case
 		
 	}
 }
