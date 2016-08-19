@@ -80,8 +80,5 @@ public class Tr69Communication
 		// TODO Auto-generated method stub
 		super.finalize();
 		this.httpClient.close();
-	}
-	
-	
-	
+	}	
 }

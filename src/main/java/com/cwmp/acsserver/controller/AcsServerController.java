@@ -150,7 +150,13 @@ public class AcsServerController
 	@RequestMapping("/reqRpc")
 	public void reqRpc(HttpServletRequest req, HttpServletResponse resp)
 	{
-		//According to front end, you can process any CPE RPC req here.
-		//Just use RPC methods in CpeClient.
+		//TODO: According to front end, you can process any CPE RPC req here.
+		//Just use RPC methods in CpeClient, like GetParameterValues, SetParameterValues, GetParameterNames, etc.
+	}
+	
+	@RequestMapping("/reqTestCaseList")
+	public void reqTestCaseList(HttpServletRequest req, HttpServletResponse resp)
+	{
+		//TODO:
 	}
 }

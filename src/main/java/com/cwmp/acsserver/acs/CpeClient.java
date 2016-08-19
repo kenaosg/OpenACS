@@ -193,10 +193,11 @@ public class CpeClient implements ICpe
 			//disconnect
 			this.comm.setConnected(false);
 			//Because there may be a case like below:
-			//acsServer peek but null returned, some user offers to the queue, some user reqConnection, acsServer disconnect
+			//acsServer peek but null returned, some user offers to the queue, some user do not reqConnection due to connected for now, acsServer disconnect
 			//do this to avoid this case and no need lock
 			if((acsConfig = this.arrayBlockingQueueForRpcTasks.peek()) != null)
 			{
+				this.comm.setConnected(true);
 				return acsConfig;
 			}
 			else
@@ -225,6 +226,7 @@ public class CpeClient implements ICpe
             seResp.getBody().setMsg(infResp);
             break;
 		case TransferComplete:
+			//TODO: 
 			break;
 		case AutonomousTransferComplete:
 			break;
